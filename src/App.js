@@ -44,27 +44,29 @@ function App() {
 
   return (
     <div className="app">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Facebook_Messenger_2019.png" 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Not_official_WeChat_logo.png" 
       alt=""/>
-      <h1>Hello my ninja warriors</h1>
-      <h2>Welcome {username} </h2>
+      <h1>Hello friends 🧀</h1>
+      <h3>Welcome {username} </h3>
 
       <form className="app__form">
-      <FormControl>
-        <InputLabel>Enter a message...</InputLabel>
+      <FormControl className="app__formControl">
         <Input 
+          className="app__input"
           value={input} 
-          onChange={event => setInput(event.target.value)} />
-
-          <IconButton 
-            disabled={!input}
-            variant="contained"
-            color="primary"
-            type="submit" 
-            onClick={sendMessage}
-            >
-            <SendIcon />
-          </IconButton>
+          onChange={event => setInput(event.target.value)} 
+          placeholder="Enter a message"
+          />
+        <IconButton 
+          className="app__iconButton"
+          disabled={!input}
+          variant="contained"
+          color="primary"
+          type="submit" 
+          onClick={sendMessage}
+          >
+          <SendIcon />
+        </IconButton>
       </FormControl>
       </form>
       
