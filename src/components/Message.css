@@ -15,5 +15,5 @@
 }
 
 .message__guestCard {
-  background-color: #e9e9eb;
+  background-color: #e9e9eb !important;
 }
